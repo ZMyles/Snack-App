@@ -1,0 +1,203 @@
+* {
+  margin: 0; 
+  padding: 0;
+}
+
+
+
+/* ID's ----------------------------------------------------------------------------------*/
+#searchPage {
+  background: #eee;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  width: 40%;
+  height: 400px;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow:  0px 0px 40px 5px black;
+  padding: 20px;
+  border-top: 20px solid blue;
+}
+
+#main-header {
+  background: blue;
+  height: 110px;
+}
+
+.nav-text {
+  color: white;
+}
+
+/*class -------------------------------------------------------------------------------------------*/
+img {
+  height: 50%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.data {
+  background: #eee;
+  margin: 30px;
+  margin-top: 35px;
+  padding: 20px;
+  list-style: none;
+  height: 100%;
+  box-shadow:  0px 0px 40px black;
+  border-radius: 5px;
+}
+
+.ingredients {
+  padding: 5px;
+}
+
+#foodNames {
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: gray;
+}
+
+/* Basic elements ---------------------*/
+
+nav {
+  height: 40px;
+  background: blue;
+  position: fixed;
+  width: 100%;
+  z-index: 1000000;
+}
+
+
+ul {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ background: lightblue;
+ margin-top: 60px;
+
+}
+
+.dropDown {
+  width: 50%;
+  border-style: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+label {
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: gray;
+}
+
+h1 {
+  color: blue;
+  font-family: 'Lobster', cursive;
+  font-size: 60px;
+}
+
+h2 {
+  font-family: 'Lobster', cursive;
+  background: blue;
+  text-align: center;
+  color: white;
+}
+
+.linkBtn {
+  background: blue;
+  font-family: 'Lobster', cursive;
+  color: white;
+  width: 50%;
+  height: 60px;
+  font-size: 30px;
+  margin-top: 20px;
+  border-radius: 0;
+}
+
+button {
+  border-style: none;
+  background: blue;
+  font-family: 'Lobster', cursive;
+  color: white;
+  width: 80%;
+  height: 60px;
+  border-radius: 5px;
+  margin-top: 50px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+button:hover {
+   background: lightblue;
+}
+
+input {
+  width: 80%;
+  height: 30px;
+  border-style: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+input:hover {
+  box-shadow: 0px 0px 40px 5px  gray;
+}
+
+#body {
+  padding-top: 100px;
+  height: 1000px;
+  background-image: url("/css/images/green.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.flex-button {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0px;
+}
+
+/*---------------Favorites Page --------------------*/
+
+
+/* FLip STyles------------------------- */
+.flip-container {
+  perspective: 1000px;
+}
+
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+  width: 320px;
+  height: 380px;
+}
+
+/*flip speed*/
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+/* hide back of pane*/
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*front pane, place back */
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(180deg)
+}

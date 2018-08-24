@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Food"><!-- ng-app Links to modules// components -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Lobster+Two|Roboto" rel="stylesheet">
+    <!-- 
+        font-family: 'Lobster', cursive;
+        font-family: 'Lobster Two', cursive;
+        font-family: 'Roboto', sans-serif;
+    -->
+</head>
+<body>
+        <div id="main-header">
+    <Nav>
+<a href="#!/search-criteria" class="nav-text">Search</a>
+<a href="#!/favorites-page" class="nav-text">My Favorites</a>
+    </Nav>
+    <ng-view></ng-view>
+        </div>
+    <script src="https://code.angularjs.org/1.6.5/angular.min.js"></script>
+    <script                     src="https://code.angularjs.org/1.6.5/angular-route.min.js"></script>
+    <script src="app/module/module.js"></script>
+    <script src="app/module/config.js"></script>
+    <script src="app/favorites/favorites-page.js"></script>
+    <script src="app/favorites/favorite-service.js"></script>
+    <script src="app/search/search-criteria.js"></script>
+    <script src="app/search/search-service.js"></script>
+</body>
+</html>
