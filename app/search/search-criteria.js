@@ -3,6 +3,14 @@ const searchCriteria = {
     // inputs for the user to type, "ng-model" gathers data from user
     template:`
     
+    <div class="main-head">
+    <a href="#!/search-criteria" class="nav-text">Search</a>
+        <div class="logo">
+        <h3>Snack-App</h3>
+        </div>
+        <a href="#!/favorites-page" class="nav-text">My Favorites</a>
+    </div>
+
     <div id="body">
     
   <div id="searchPage">  
@@ -35,7 +43,7 @@ const searchCriteria = {
         <div class="flipper">
             <div class="front">
        <p id="foodNames">{{item.recipe.label}}
-       <img src="{{item.recipe.image}}" >
+       <img src="{{item.recipe.image}}" > 
        
             </div>
            <div class="back"> 

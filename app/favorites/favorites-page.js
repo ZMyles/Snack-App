@@ -1,12 +1,41 @@
 "use strict";
 const favoritesPage={
     template:`
+    <div class="main-head">
+    <a href="#!/search-criteria" class="nav-text">Search</a>
+    <div class="logo">
+    <h3>Snack-App</h3>
+    </div>
+    <a href="#!/favorites-page" class="nav-text">My Favorites</a>
+</div>
+    
     <section id="favPage">
-        <h1> My Favorite Foods</h1>
+    <h1 class="hd-position"> My Favorites</h1>
+        <div class="favbody"></div>
         <ul class="favBody">
        
-            <li ng-repeat="newItem in $ctrl.newItem"newItem="newItem">    <img src="{{newItem.image}}" >{{newItem.label}}<button ng-click="$ctrl.remove(index)">X</button></li>
-            <button ng-click="$ctrl.search();"></button>
+
+        
+            <li  class="data" ng-repeat="newItem in $ctrl.newItem"newItem="newItem">
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover')">
+                <div class="flipper">
+            <div class="front">
+                 <p id="foodNames"> {{newItem.label}}
+                    <img  src="{{newItem.image}}" >
+             </div>
+
+             </div>
+             <div class="back"> 
+                 <h2>Ingredients</h2>
+                 <p  class="ingredients" ng-repeat="newItem in newItem.recipe.ingredientLines"track by $index>{{newItem}}</p>
+         
+              </div>
+            </div>
+            </div>
+
+             
+             <button ng-click="$ctrl.remove(index)">Remove</button></li>
+            <button ng-click="$ctrl.search();">Hungry for more?</button>
         </ul>   
     </section>
     `,

@@ -20,14 +20,44 @@
   border-top: 20px solid blue;
 }
 
-#main-header {
+.main-head {
   background: blue;
-  height: 110px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  background: #eee;
+  height: 100px;
+  width: 20%;
+  border: gray 10px double;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  box-shadow:  0px 0px 40px 5px black;
+}
+
+h3 {
+  color: blue;
+  font-family: 'Lobster Two', cursive;
+  font-size: 3.5em;
+  margin-top: 10px;
+  text-shadow:  2px 2px 8px gray;
+
 }
 
 .nav-text {
   color: white;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 20px;
 }
+
+.nav-text:hover{
+  color: gray;
+}
+
 
 /*class -------------------------------------------------------------------------------------------*/
 img {
@@ -58,6 +88,27 @@ img {
   color: gray;
 }
 
+.hd-position {
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+  
+  
+}
+
+#favPage {
+  background-image: url(/css/images/cera-chiu-610423-unsplash.jpg);
+  background-size: cover;
+  height: 300px;
+  
+}
+
+.favbody {
+  margin-top: 2px;
+}
+
+
+
 /* Basic elements ---------------------*/
 
 nav {
@@ -75,7 +126,7 @@ ul {
  justify-content: center;
  background: lightblue;
  margin-top: 60px;
-
+background-image: url(/css/images/plade-background.jpg);
 }
 
 .dropDown {
@@ -96,6 +147,7 @@ h1 {
   color: blue;
   font-family: 'Lobster', cursive;
   font-size: 60px;
+  text-shadow:  2px 2px 8px gray;
 }
 
 h2 {
